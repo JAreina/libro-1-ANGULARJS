@@ -14,12 +14,15 @@
 </head>
 <body ng-controller="jareina1">
 
-
+<h1>CON scope.$apply</h1>
         <button ng-click="scheduleTask()">Get Message after 3 seconds
                 </button>
                 <br/>Message fetched: {{message}}
 
- 
+                <h1>CON $timeout</h1>
+                <button ng-click="scheduleTask2()">Get Message after 3 seconds
+                        </button>
+                        <br/>Message fetched: {{message2}}
 
 
 <script src="lib/angular.js"></script>

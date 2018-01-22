@@ -1,7 +1,7 @@
 angular.module('myApp.controllers', [])
     .controller('jareina', function($scope) {
 
-        $usuario="";
+        $scope.usuario="";
         $scope.now=new Date(); //set the model 'now' on scope
         
         $scope.greeting="HOLA";

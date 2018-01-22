@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es" ng-app="myApp">
+<head>
+<title>{{titulo}} root scope</title>
+<meta charset="utf-8">
+
+<style>
+    body{
+        background-color:tomato;
+        color:white;
+    }
+
+</style>
+</head>
+<body ng-controller="jareina1">
+
+
+    <h3>{{nombreRootScope}}</h3>
+   <span>{{editorial}} especializada en libros de {{tipo}}</span>
+
+
+    <div ng-controller="jareina2">
+
+<h4>Algunos de los libros populares de {{editorial}}</h4>
+<ul>
+    <li ng-repeat="libro in libros">
+        {{libro}}
+    </li>
+</ul>
+    </div> 
+
+<script src="lib/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</body>
+</html>

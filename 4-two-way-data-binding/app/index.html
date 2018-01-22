@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es" ng-app="myApp">
+<head>
+<title>Finance Meter</title>
+<meta charset="utf-8">
+
+<style>
+    body{
+        background-color:tomato;
+        color:white;
+    }
+
+</style>
+</head>
+<body ng-controller="jareina as ja">
+<input  type="text" placeholder="Cómo te llamas ??" ng-model="ja.usuario">
+
+    <div ng-if="ja.usuario" >
+            {{ja.greeting}}, {{ja.usuario}} 
+         <p>The current date/time is
+              <span>{{ja.now | date:  'medium'}}</span>
+        </p>   
+            
+            
+        <button ng-click="ja.getRandomHelloMessage()">Saludo aleatorio
+                        </button>
+
+    </div>
+
+    <h1>facebook id</h1>
+
+    <input type="text" ng-model="fbID" />
+<br/>
+<span><img ng-src="https://graph.facebook.com/{{fbID}}
+/picture?type=normal"/></span>
+   
+<script src="lib/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</body>
+</html>
